@@ -9,7 +9,7 @@ int main(void)
 {
 	int intType;
 	long int floatType;
-	long long doubleType;
+	long long int doubleType;
 	char charType;
 
 	printf("Size of int: %zu byte(s)\n", sizeof(intType));
