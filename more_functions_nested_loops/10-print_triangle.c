@@ -9,7 +9,7 @@ void print_triangle(int size)
 {
 	int i, j, d;
 
-	if (size == 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
