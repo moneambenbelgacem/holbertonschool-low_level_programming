@@ -2,6 +2,7 @@
 /**
  * print_line - function that print negative or positif check
  * _putchar - writes the character c to stdout
+ * @n: input for print_line
  *Return: Always 0 (Success)
  */
 void print_line(int n)
