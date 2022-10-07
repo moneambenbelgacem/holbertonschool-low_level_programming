@@ -6,7 +6,7 @@
  */
 void more_numbers(void)
 {
-	char i, j, y,x;
+	char i, j, y, x;
 
 	for (j = 0; j <= 9; j++)
 	{
@@ -14,15 +14,12 @@ void more_numbers(void)
 		for (i = 0; i <= 14; i++)
 		{
 			if (i < 10)
-		
 				y = i;
-			
 			else
 			{
 				x = i / 10;
 				y = i % 10;
-				_putchar( x + '0');
-				
+				_putchar(x + '0');
 			}
 			_putchar(y + '0');
 		}
