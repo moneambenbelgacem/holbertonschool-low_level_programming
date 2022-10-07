@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - inting all numbers till 14
- *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
