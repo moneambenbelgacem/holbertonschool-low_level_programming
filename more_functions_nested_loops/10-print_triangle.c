@@ -16,11 +16,11 @@ void print_triangle(int size)
 		{
 			if (j <= d)
 			{
-			printf(" ");
+			_putchar(' ');
 			}
 			else 
 			{
-				printf("#");
+				_putchar(35);
 			}
 
 
