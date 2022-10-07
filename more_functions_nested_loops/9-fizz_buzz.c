@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * fizzbuzz - inting all numbers till 14
+ * main - inting all numbers till 14
  *
  */
 int main(void)
