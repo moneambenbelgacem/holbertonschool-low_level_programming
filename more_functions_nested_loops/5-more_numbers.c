@@ -1,5 +1,4 @@
 #include "main.h"
-#include<unistd.h>
 /**
  * more_numbers - function that print negative or positif check
  * _putchar - writes  the character c to stdout
@@ -7,24 +6,26 @@
  */
 void more_numbers(void)
 {
-	int i, j , c;
-	c = 0;
-for (j = 0; j <= 9; j++)
-{
+	char i, j, y,x;
 
-	for (i = 0; i <= 14; i++)
+	for (j = 0; j <= 9; j++)
 	{
-		if (i < 10)
+
+		for (i = 0; i <= 14; i++)
 		{
-		i = c;
+			if (i < 10)
+		
+				y = i;
+			
+			else
+			{
+				x = i / 10;
+				y = i % 10;
+				_putchar( x + '0');
+				
+			}
+			_putchar(y + '0');
 		}
-		else
-		{
-		_putchar('0'+ c / 10 );
-		_putchar('0' + c % 10  );
-		}
-		_putchar(10);
+		_putchar('\n');
 	}
-	
-}
 }
