@@ -17,9 +17,10 @@ void print_number(int n)
 		count++;
 		
 	}
-	for (j = count; j <= 0; j--)
+	for (j = count; j == 0; j--)
 	{
-	printf("%d",tab[i]);
+	printf("%d",tab[j]);
+
 	}
 
 }
