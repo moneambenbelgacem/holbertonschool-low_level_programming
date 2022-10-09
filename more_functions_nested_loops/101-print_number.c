@@ -1,4 +1,5 @@
 #include "main.h"
+#include<stdio.h>
 /**
  * print_number - function that print negative or positif check
  * _putchar - writes  the character c to stdout
@@ -7,20 +8,9 @@
  */
 void print_number(int n)
 {
-	int i = 0, j, count = 0; 
-	int tab[100];
-	
-	while (n > 10)
-	{	
-		tab[i] = n%10;
-		n = n/10;
-		count++;
-		
-	}
-	for (j = count; j == 0; j--)
-	{
-	printf("%d",tab[j]);
-
-	}
+	char my_num[20];
+	sprintf(my_num, "%d",n);
+	printf("%s",my_num);
+	printf("\n");
 
 }
