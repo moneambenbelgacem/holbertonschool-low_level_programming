@@ -6,17 +6,28 @@
  */
 int main(void)
 {
-	int tab[51], i;
+	long int nbr1, nbr2, fib, i;
 
-	tab[1] = 1;
-	tab[2] = 1;
-	
+	nbr1 = 1;
+	nbr2 = 1;
 
+	printf("%ld, ", nbr2);
 	for (i = 2; i <= 50; i++)
-	{	printf("%d, ", tab[i]);
-		tab[i+1] = tab[i] + tab[i-1];
-		
+	{
+		fib = nbr1 + nbr2;
+		if (i != 50)
+		{
+
+			printf("%ld, ", fib);
+		}
+		else
+		{
+			printf("%ld", fib);
+		}
+		nbr1 = nbr2;
+		nbr2 = fib;
 	}
+	printf("\n");
 
 	return (0);
 }
