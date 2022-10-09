@@ -30,7 +30,11 @@ void print_times_table(int n) {
         putchar(',');
         putchar(' ');
       }
-
+		else if((i * j) >= 100)
+		{
+			  putchar(',');
+        putchar(' ');
+		}
       printf("%d", i * j);
     }
     putchar('\n');
