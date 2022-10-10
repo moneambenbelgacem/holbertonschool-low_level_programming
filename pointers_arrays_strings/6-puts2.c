@@ -11,7 +11,7 @@ void puts2(char *str)
 	int l, i;
 	
 
-	l = strlen(str);
+	l = strlen(str)-1;
 	
 	for (i = 0; i <= l; i += 2)
 	{
