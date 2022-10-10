@@ -13,7 +13,7 @@ void puts2(char *str)
 
 	l = strlen(str);
 	saut = str;
-	for (i = 0; i < l-2; i++)
+	for (i = 0; i < l-1; i += 2)
 	{
 		ch = *saut;
 		printf("%c", ch);
