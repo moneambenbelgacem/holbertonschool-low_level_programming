@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * swap_int - update the value of n
+ * _puts - update the value of n
  * _putchar - print character
  *@str: value input
  * Return: Always 0.
