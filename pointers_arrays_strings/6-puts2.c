@@ -3,7 +3,7 @@
 
 /**
  * puts2 - update the value of n
- *@s: value input
+ *@str: value input
  * Return: Always 0.
  */
 void puts2(char *str)
