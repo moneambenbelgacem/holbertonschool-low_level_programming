@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_rev - update the value of n
+ * puts2 - update the value of n
  *@s: value input
  * Return: Always 0.
  */
