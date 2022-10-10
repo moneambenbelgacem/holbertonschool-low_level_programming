@@ -9,15 +9,15 @@
 void puts2(char *str)
 {
 	int l, i;
-	char *saut, ch;
+	
 
 	l = strlen(str);
-	saut = str;
+	
 	for (i = 0; i < l-1; i += 2)
 	{
-		ch = *saut;
-		printf("%c", ch);
-		saut += 2;
+		
+		printf("%c", str[i]);
+		
 
 		
 	}
