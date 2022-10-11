@@ -3,7 +3,8 @@
 
 /**
  * strcpy - update the value of n
- *@str: value input
+ *@src: value input
+ *@dest: value input
  * Return: Always 0.
  */
 char *_strcpy(char *dest, char *src)
