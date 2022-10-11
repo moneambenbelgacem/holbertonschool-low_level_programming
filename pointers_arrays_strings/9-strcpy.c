@@ -2,18 +2,18 @@
 #include <stdio.h>
 
 /**
- * puts2 - update the value of n
+ * strcpy - update the value of n
  *@str: value input
  * Return: Always 0.
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i,l; 
-	l = strlen(src);
+	int i;
 
-	for (i = 0; i <= l-1; i++)
+	for (i = 0; src[i] != '\0'; i++)
 	{
-		dest[i]=src[i];
+		dest[i] = src[i];
 	}
-	return(dest);
+	dest[i] = '\0';
+	return (dest);
 }
