@@ -6,6 +6,7 @@
  * _strncat -  update the value of n
  *@src: value input
  *@dest: value input
+ *@n: value input 
  * Return: Always 0.
  */
 char *_strncat(char *dest, char *src, int n)
