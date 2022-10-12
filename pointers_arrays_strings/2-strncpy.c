@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * _strncpy -  update the value of n
  *@src: value input
@@ -18,8 +19,8 @@ char *_strncpy(char *dest, char *src, int n)
 
 		dest[i] = src[i];
 	}
-	while (i < n)
-		dest[i++] = '\0';
+	for (; i < n; i++)
+		dest[i] = '\0';
 
 	return (dest);
 }
