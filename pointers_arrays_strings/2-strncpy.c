@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * _strncpy -  update the value of n
  *@src: value input
@@ -16,11 +15,13 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (i = 0; src[i] != '\0' && i < n; i++)
 	{
-
 		dest[i] = src[i];
 	}
-	for (; i < n; i++)
+	while( i < n)
+	{
 		dest[i] = '\0';
+		i++;
+	}
 
 	return (dest);
 }
