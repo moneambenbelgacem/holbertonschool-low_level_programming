@@ -6,12 +6,11 @@
  * _strncat -  update the value of n
  *@src: value input
  *@dest: value input
- *@n: value input 
+ *@n: value input
  * Return: Always 0.
  */
 char *_strncat(char *dest, char *src, int n)
 {
-
 	int i = 0, l;
 
 	for (i = 0; dest[i] != '\0'; i++)
@@ -21,6 +20,5 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[i + l] = src[l];
 	}
-
 	return (dest);
 }
