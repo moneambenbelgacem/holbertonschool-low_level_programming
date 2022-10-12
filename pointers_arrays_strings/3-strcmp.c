@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
  * _strcmp -  update the value of n
- *@src: value input
- *@dest: value input
+ *@s1: value input
+ *@s2: value input
  * Return: Always 0.
  */
 int _strcmp(char *s1, char *s2)
@@ -23,3 +23,4 @@ int _strcmp(char *s1, char *s2)
 
 	return (res);
 }
+
