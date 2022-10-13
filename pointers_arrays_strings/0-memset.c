@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /**
- * leet - print an array of integers
+ * _memset - print an array of integers
  * _putchar - writes the character c to stdout
  * @s: an input point to buffer
  * @b: char to plain 
+ * @n: char to plain 
  *
  * Return: nothing.
  */
