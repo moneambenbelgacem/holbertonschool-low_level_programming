@@ -13,7 +13,6 @@ char *_strchr(char *s, char c)
 	int len, i = 0, pos = 0;
 
 	len = strlen(s);
-
 	while (i <= len)
 	{
 		if (s[i] == c)
