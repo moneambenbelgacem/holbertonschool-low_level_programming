@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * _memset - print an array of integers
  * _putchar - writes the character c to stdout
