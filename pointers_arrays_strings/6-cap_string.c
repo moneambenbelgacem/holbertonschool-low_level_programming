@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * string_toupper - print an array of integers
+ * cap_string - print an array of integers
  * _putchar - writes  the character c to stdout
- * @str: an array of integers
+ * @s: an array of integers
  *
  * Return: nothing.
  */
