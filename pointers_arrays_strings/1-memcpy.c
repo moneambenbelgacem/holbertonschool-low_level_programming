@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _memset - print an array of integers
+ * _memcpy - print an array of integers
  * _putchar - writes the character c to stdout
  * @dest: an input point to buffer
  * @src: char to plain
@@ -12,15 +12,14 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned i = 0;
 
-	while ((*src != '\0')&& (i < n))
+	while ((*src != '\0') && (i < n))
 	{
-		
-		
-			*(dest+i) = *(src +i);
-			i++;
-		
+
+		*(dest + i) = *(src + i);
+		i++;
 	}
-	while(i<n){
+	while (i < n)
+	{
 		dest[i] = '\0';
 		i++;
 	}
