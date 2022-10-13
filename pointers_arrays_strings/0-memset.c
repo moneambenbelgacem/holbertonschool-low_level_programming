@@ -7,7 +7,6 @@
  * @s: an input point to buffer
  * @b: char to plain
  * @n: char to plain
- *
  * Return: nothing.
  */
 char *_memset(char *s, char b, unsigned int n)
