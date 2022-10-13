@@ -10,24 +10,25 @@
 char *_strchr(char *s, char c)
 {
 
-int len , i =0;
-	
-len = strlen(s)-1;
+	int len, i = 0, pos = 0;
 
-	while (i <= len )
+	len = strlen(s) - 1;
+
+	while (i <= len)
 	{
-		if (s[i]== c)
+		if (s[i] == c)
 		{
 
-		s = s + i; 
-		break;
+			s = s + i;
+			pos = i;
+			break;
 		}
-		else 
+		else
 		{
 			i++;
 		}
-
 	}
-	
+	if (pos == 0)
+		return (NULL);
 	return (s);
 }
