@@ -3,7 +3,7 @@
 
 /**
  * string_toupper - print an array of integers
- * _putchar - writes the character c to stdout
+ * _putchar - writes  the character c to stdout
  * @str: an array of integers
  *
  * Return: nothing.
