@@ -20,6 +20,7 @@ len = strlen(s)-1;
 		{
 
 		s = s + i; 
+		break;
 		}
 		else 
 		{
