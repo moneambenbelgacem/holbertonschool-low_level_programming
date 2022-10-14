@@ -22,7 +22,6 @@ char *_strpbrk(char *s, char *accept)
 				break;
 			}
 		}
-		
 
 		if (accept[j])
 		{
@@ -30,13 +29,14 @@ char *_strpbrk(char *s, char *accept)
 			break;
 		}
 	}
-	if (( *(s+i) != 0))
+	if ((*(s + i) != 0))
 	{
-		
-	return (s);
+
+		return (s);
 	}
 	else
 	{
 		return (NULL);
 	}
 }
+
