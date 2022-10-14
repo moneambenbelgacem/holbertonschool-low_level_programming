@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strstr - print an array of integers
+ * print_chessboard - print an array of integers
  * _putchar - writes the character c to stdout
  * @a: char to plain
  * Return: nothing.
