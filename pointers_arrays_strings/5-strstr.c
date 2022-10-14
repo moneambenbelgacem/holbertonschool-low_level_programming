@@ -1,23 +1,31 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strchr - print an array of integers
+ * _strstr - print an array of integers
  * _putchar - writes the character c to stdout
- * @s: char to plain
- * @c: char to plain
+ * @haystack: char to plain
+ * @needle: char to plain
  * Return: nothing.
  */
-char *_strstr(char *haystack, char *needle) {
-  int i, j;
+char *_strstr(char *haystack, char *needle)
+{
+	int i, j;
 
-  for (i = 0; haystack[i] != '\0'; i++) {
-    while (haystack[i] == needle[j]) {
-
-      if (haystack[i] == needle[j])
-        j++;
-      else
-        break;
-    }
-  }
-  return (haystack + i);
+	for (i = 0; haystack[i] != '\0'; i++)
+	{
+		for (j = 0; haystack[i] == needle[0]; j++)
+		{
+			if (haystack[i + j] != needle[j])
+				break;
+		}
+		if (!needle[j])
+		{
+			return (haystack + i);
+		}
+		else
+		{
+			j = 0;
+		}
+	}
+	return (NULL);
 }
