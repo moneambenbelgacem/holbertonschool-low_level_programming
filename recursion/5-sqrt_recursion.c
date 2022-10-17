@@ -1,9 +1,8 @@
 #include "main.h"
 /**
  * _sqrt_recursion - update the value of n
- * sqrt_check - check the entree value
- * _putchar - puts the char
  *@n: value input
+ * sqrt_check - check the entree value
  *@x: value input
  *@y: value input
  * Return: Always 0.
