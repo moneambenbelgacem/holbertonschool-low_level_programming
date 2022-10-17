@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * _pow_recursion - update the value of n
+ * sqrt_check - update the value of n
  * _putchar - puts the char
  *@n: value input
+ *@x: value input
+ *@y: value input
  * Return: Always 0.
  */
 
