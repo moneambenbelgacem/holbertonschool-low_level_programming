@@ -2,7 +2,7 @@
 /**
  * factorial - update the value of n
  * _putchar - puts the char
- *@s: value input
+ *@n: value input
  * Return: Always 0.
  */
 int factorial(int n)
