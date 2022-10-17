@@ -1,7 +1,5 @@
 #include "main.h"
 /**
- * _sqrt_recursion - update the value of n
- *@n: value input
  * sqrt_check - check the entree value
  *@x: value input
  *@y: value input
@@ -22,6 +20,12 @@ int sqrt_check(int x, int y)
 		return (sqrt_check(x + 1, y));
 	}
 }
+
+/**
+ * _sqrt_recursion - recursion function
+ *@n: value input
+ * Return: Always 0.
+ */
 int _sqrt_recursion(int n)
 {
 	if (n == 0)
