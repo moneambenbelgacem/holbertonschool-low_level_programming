@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * sqrt_check - update the value of n
+ * sqrt_check - check the entree value
  * _putchar - puts the char
  *@n: value input
  *@x: value input
