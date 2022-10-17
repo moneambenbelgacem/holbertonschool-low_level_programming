@@ -7,7 +7,6 @@
  *@y: value input
  * Return: Always 0.
  */
-
 int sqrt_check(int x, int y)
 {
 	if (x * x == y)
