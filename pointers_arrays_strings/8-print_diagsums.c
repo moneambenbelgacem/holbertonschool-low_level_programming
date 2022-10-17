@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strchr - print an array of integers
- * _putchar - writes the character c to stdout
- * @s: char to plain
- * @c: char to plain
+ * print_diagsums - print an array of integers
+ * @a: char to plain
+ * @size: char to plain
  * Return: nothing.
  */
 void print_diagsums(int *a, int size)
