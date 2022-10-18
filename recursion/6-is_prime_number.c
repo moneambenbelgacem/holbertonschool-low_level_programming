@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * check_prime_number - to check if prime or not
- *@n: value input
- *@i: value input
+ *@x: value input
+ *@y: value input
  * Return: 1 on success or 0 on fail.
  */
 int check_prime_number(int x, int y)
