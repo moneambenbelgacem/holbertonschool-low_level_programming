@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _print_rev_recursion - update the value of n
+ * _strlen_recursion - update the value of n
  * _putchar - puts the char
  *@s: value input
  * Return: Always 0.
