@@ -1,3 +1,5 @@
+#ifndef INV_TREE_H
+#define INV_TREE_H
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -21,3 +23,4 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
+#endif
