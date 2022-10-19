@@ -9,22 +9,21 @@
  */
 int main(int argc, char *argv[])
 {
-	int i,mul=1;  
+	int i, mul = 1;
 
 	if (argc < 3)
 	{
 		printf("Error\n");
 	}
-	else{
-		for (i = 1; i<argc; i++)
+	else
+	{
+		for (i = 1; i < argc; i++)
 		{
-	
-			
-				mul *=atoi(argv[i]);
-			
+
+			mul *= atoi(argv[i]);
 		}
-		printf("%d\n",mul);
+		printf("%d\n", mul);
 	}
-	
-	return (0); 
+
+	return (0);
 }
