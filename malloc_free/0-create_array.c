@@ -8,13 +8,13 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *mytab ;
+	char *mytab = NULL ;
 	unsigned int i;
 
 	if (size == 0)
 		return (NULL);
 
-	mytab = malloc(sizeof(unsigned int) * size);
+	mytab = malloc(sizeof(char) * size);
 
 	for (i = 0; i < size; i++)
 	{
