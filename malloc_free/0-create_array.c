@@ -22,5 +22,5 @@ mytab = malloc(sizeof(*mytab) * size);
 		*(mytab +i) = c;
 	}
 	return (mytab);
-	free(mytab);
+
 }
