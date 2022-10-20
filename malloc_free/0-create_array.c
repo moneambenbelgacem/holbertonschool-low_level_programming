@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_numbers - function that print negative or positif check
- * _putchar - writes the character c to stdout
+ * create_array - function that print negative or positif check
+ *@size: length of array
+ *@c: input char 
  *Return: Always 0 (Success)
  */
 char *create_array(unsigned int size, char c)
