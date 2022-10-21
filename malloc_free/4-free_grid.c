@@ -8,12 +8,12 @@
  */
 void free_grid(int **grid, int height)
 {
-	int i;
+	int i,*currentIntPtr;
 
 	for (i = 0; i < height; i++)
 	{
 
-		int *currentIntPtr = grid[i];
+		currentIntPtr = grid[i];
 		free(currentIntPtr);
 	}
 	free(grid);
