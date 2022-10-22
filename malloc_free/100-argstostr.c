@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+/**
+ * argstostr - main entry
+ * @ac: int input
+ * @av: double pointer array
+ * Return: 0
+ */
+char *argstostr(int ac, char **av)
+{
+	int i, n, k = 0, len = 0;
+	char *str;
+	
+	
+
+	if (ac == 0 || av == NULL)
+		return (NULL);
+
+	for (i = 0; i < ac; i++)
+	{
+		for (n = 0; av[i][n] != '\0'; n++)
+			len++;
+	}
+
+	str = malloc(sizeof(char*) * len );
+	if (str == NULL)
+		return (NULL);
+
+	for (i = 0; i < ac; i++)
+	{
+		for (n = 0; av[i][n] != '\0'; n++)
+		{
+			str[k] = av[i][n];
+			k++;
+		}
+		if (str[k] == '\0')
+		{
+			str[k++] = '\n';
+		}
+	}
+	return (str);
+}
