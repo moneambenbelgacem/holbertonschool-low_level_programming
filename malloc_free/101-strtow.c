@@ -7,7 +7,7 @@
  */
 int number(char *str)
 {
-	int a, num = 0;
+	int a,j, num = 0;
 
 	for (a = 0; str[a] != '\0'; a++)
 	{
@@ -15,7 +15,7 @@ int number(char *str)
 			str++;
 		else
 		{
-			for (; str[a] != ' ' && str[a] != '\0'; a++)
+			for (j = 0; str[j] != ' ' && str[j] != '\0'; j++)
 				str++;
 			num++;
 		}
