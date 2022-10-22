@@ -59,7 +59,7 @@ char **strtow(char *str)
 		else
 		{
 			found_word = str;
-			for (; *str != ' ' && *str != '\0';)
+			while ((*str != ' ') && (*str != '\0'))
 			{
 				length++;
 				str++;
