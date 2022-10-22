@@ -17,13 +17,13 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for (i = 0; i < ac; i++)
+	for (i = 1; i < ac; i++)
 	{
-		for (n = 0; av[i][n] != '\0'; n++)
+		for (n = 1; av[i][n] != '\0'; n++)
 			len++;
 	}
 len += ac;
-	str = malloc(sizeof(char) * len+1 );
+	str = malloc(sizeof(char) * len );
 	if (str == NULL)
 		return (NULL);
 
