@@ -15,7 +15,7 @@ int number(char *str)
 			str++;
 		else
 		{
-			for (a = 0; str[a] != ' ' && str[a] != '\0'; a++)
+			for (; str[a] != ' ' && str[a] != '\0'; a++)
 				str++;
 			num++;
 		}
