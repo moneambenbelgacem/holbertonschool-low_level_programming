@@ -15,7 +15,7 @@ int number(char *str)
 			str++;
 		else
 		{
-			for (a = 0; str[a] != ' ' && str[a] != '\0'; a++)
+			for (; str[a] != ' ' && str[a] != '\0'; a++)
 				str++;
 			num++;
 		}
@@ -52,14 +52,14 @@ char **strtow(char *str)
 	words = malloc((total_words + 1) * sizeof(char *));
 	if (words == 0)
 		return (NULL);
-	while (*str != '\0' &&  b < total_words)
+	for (; *str != '\0' &&  b < total_words;)
 	{
 		if (*str == ' ')
 			str++;
 		else
 		{
 			found_word = str;
-			while (*str != ' ' && *str != '\0')
+			for (; *str != ' ' && *str != '\0';)
 			{
 				length++;
 				str++;
