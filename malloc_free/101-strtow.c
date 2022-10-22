@@ -16,7 +16,10 @@ int number(char *str)
 		else
 		{
 			for (; str[a] != ' ' && str[a] != '\0'; a++)
+			{
+
 				str++;
+			}
 			num++;
 		}
 	}
