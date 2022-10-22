@@ -52,10 +52,10 @@ char **strtow(char *str)
 	total_words = number(str);
 	if (total_words == 0)
 		return (NULL);
-	words = malloc((total_words) * sizeof(char *));
+	words = malloc((total_words +1) * sizeof(char *));
 	if (words == 0)
 		return (NULL);
-	for (; *str != '\0' &&  b < total_words;)
+	while ((*str != '\0') &&  (b < total_words))
 	{
 		if (*str == ' ')
 			str++;
