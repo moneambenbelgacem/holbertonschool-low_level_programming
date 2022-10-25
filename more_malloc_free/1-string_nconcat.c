@@ -3,7 +3,7 @@
  * string_nconcat - function to calculate number of words
  *@s1: string being passed to check for words
  *@s2: string being passed to check for words
- *@
+ *@n: input for length to concat
  * Return: number of words
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
