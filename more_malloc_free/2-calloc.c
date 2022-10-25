@@ -1,9 +1,8 @@
 #include "main.h"
 /**
  * string_nconcat - function to calculate number of words
- *@s1: string being passed to check for words
- *@s2: string being passed to check for words
- *@n: input for length to concat
+ *@nmemb: string being passed to check for words
+ *@size: string being passed to check for words
  * Return: number of words
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
