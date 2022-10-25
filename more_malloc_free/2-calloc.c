@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * string_nconcat - function to calculate number of words
+ * _calloc - function to calculate number of words
  *@nmemb: string being passed to check for words
  *@size: string being passed to check for words
  * Return: number of words
