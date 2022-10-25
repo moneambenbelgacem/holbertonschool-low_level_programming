@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * array_range - function to calculate number of words
- *@nmemb: string being passed to check for words
- *@size: string being passed to check for words
+ *@min: string being passed to check for words
+ *@max: string being passed to check for words
  * Return: number of words
  */
 int *array_range(int min, int max)
