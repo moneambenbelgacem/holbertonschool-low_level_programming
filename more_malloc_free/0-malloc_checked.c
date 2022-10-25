@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * number - function to calculate number of words
- * @str: string being passed to check for words
+ * malloc_checked - function to calculate number of words
+ * @b: string being passed to check for words
  *
  * Return: number of words
  */
