@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _calloc - function to calculate number of words
+ * array_range - function to calculate number of words
  *@nmemb: string being passed to check for words
  *@size: string being passed to check for words
  * Return: number of words
@@ -8,7 +8,7 @@
 int *array_range(int min, int max)
 {
 	int *ptr;
-	int a = 0;
+	int a ;
 
 	if (min > max)
 		return (NULL);
