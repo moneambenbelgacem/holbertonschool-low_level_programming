@@ -1,11 +1,12 @@
 #include "function_pointers.h"
 /**
- * print_name - Entry point
+ * array_iterator - Entry point
  *
- * @name: string
- * @f: function
+ * @array: string
+ * @size: function
+ * @action: function
  *
- * Description: 'print name.'
+ * Description: 'array_iterator'
  *
  * Return: void
  */
