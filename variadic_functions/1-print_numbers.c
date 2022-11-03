@@ -1,8 +1,9 @@
 #include "variadic_functions.h"
 /**
- * sum_them_all - Entry point
+ * print_numbers - Entry point
  *
- * @n: string
+ * @separator: string
+ * @n: nuber of elem
  *
  * Description: 'print name.'
  *
