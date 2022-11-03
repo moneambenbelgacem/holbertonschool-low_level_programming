@@ -3,9 +3,9 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
- * struct op - Struct op
+ * get_op_func - Struct op
  *
- * @op: The operator
+ * @s: The operator
  * @f: The function associated
  */
 
