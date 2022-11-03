@@ -6,7 +6,6 @@
  * get_op_func - Struct op
  *
  * @s: The operator
- * 
  * Return: 0 or 1
  */
 
