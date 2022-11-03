@@ -6,7 +6,8 @@
  * get_op_func - Struct op
  *
  * @s: The operator
- * @f: The function associated
+ * 
+ * Return: 0 or 1
  */
 
 int (*get_op_func(char *s))(int, int)
