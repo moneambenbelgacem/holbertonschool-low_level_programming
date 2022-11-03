@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (98);
 	}
-	op = *(argv[2]) ;
+	op = *(argv[2]);
 	if ((op == '/' || op == '%') && !atoi(argv[3]))
 	{
 		printf("Error\n");
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (99);
 	}
-	result = calc_func(atoi(argv[1]),atoi(argv[3]));
+	result = calc_func(atoi(argv[1]), atoi(argv[3]));
 	printf("%d\n", result);
 	return (0);
 }
