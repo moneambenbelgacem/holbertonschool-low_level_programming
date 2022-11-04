@@ -28,7 +28,7 @@ void print_float(va_list args) { printf("%f", va_arg(args, double)); }
 /**
  * print_all - Entry point
  *
- * @format: string
+ *@format: string
  *
  * Description: 'print name.'
  *
