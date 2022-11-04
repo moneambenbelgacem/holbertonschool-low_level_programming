@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 /**
- * print_numbers - Entry point
+ * print_strings - Entry point
  *
  * @separator: string
  * @n: nuber of elem
