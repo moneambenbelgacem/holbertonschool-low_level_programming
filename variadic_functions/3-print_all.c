@@ -16,7 +16,7 @@ void print_char(va_list args) { printf("%c", va_arg(args, int)); }
 void print_string(va_list args) {
   char *z = va_arg(args, char *);
 
-  !z?printf("(nil)"):printf("%s",z);
+  !z?printf("(nil)"):printf("%s",);
 }
 /**
  * print_float - prints an int
