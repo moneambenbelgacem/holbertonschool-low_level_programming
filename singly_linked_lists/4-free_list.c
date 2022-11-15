@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
- * print_list - check the code
- *@h: list entry point
+ * free_list - check the code
+ *@head: list entry point
  * Return: Always 0.
  */
 void free_list(list_t *head)
@@ -11,9 +11,9 @@ void free_list(list_t *head)
 	while (head != NULL)
 	{
 		victime = head;
-		head = head->next; 
+		head = head->next;
 		free(victime->str);
 		free(victime);
 	}
-	
 }
+
