@@ -2,6 +2,7 @@
 /**
  * get_nodeint_at_index - check the code
  *@head: list entry point
+ *@index: list entry point
  * Return: Always 0.
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
