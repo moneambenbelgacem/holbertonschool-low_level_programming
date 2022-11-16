@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_nodeint - check the code
+ * add_nodeint_end - check the code
  *@head: list entry point
  *@n: list entry point
  * Return: Always 0.
