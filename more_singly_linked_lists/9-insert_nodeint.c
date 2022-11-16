@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * get_nodeint_at_index - check the code
- *@head: list entry point
+ *@head: list entry  point
  *@index: list entry point
  * Return: Always 0.
  */
