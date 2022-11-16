@@ -9,7 +9,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *hsol, *new;
 	unsigned int i = 0;
-
+	if (idx < 0 || *head == NULL)
+	{
+		return (NULL);
+	}
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
@@ -25,7 +28,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	while (i < (idx - 1))
 	{
-
+		if (!hsol)
+		{
+			return (NULL);
+		}
 		hsol = hsol->next;
 		i++;
 	}
