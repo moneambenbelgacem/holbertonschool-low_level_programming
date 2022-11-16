@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index - check the code
+ * insert_nodeint_at_index - check the code
  *@head: list entry  point
- *@index: list entry point
+ *@idx: list entry point
+ *@n: list entry point
  * Return: Always 0.
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
