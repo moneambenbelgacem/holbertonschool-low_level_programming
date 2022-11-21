@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		ch = fgetc(ptr);
 		printf("%c",ch);
 		i++; 
-		if(i == letters-1)
+		if(i == letters)
 		break;
 
 	}
