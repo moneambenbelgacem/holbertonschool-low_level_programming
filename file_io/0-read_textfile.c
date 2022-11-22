@@ -29,5 +29,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		printf("%c",buf[i]);
 	}
+	free(buf);
+	close(fp);
+
 	return (b);
 }
