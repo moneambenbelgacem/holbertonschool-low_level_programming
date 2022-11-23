@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 {
 	int src, dst, in, out, c1, c2;
 	char buf[BUF_SIZE];
+
 	if (argc != 3)
 		exit(1);
 	src = open(argv[1], O_RDONLY);
@@ -31,7 +32,7 @@ int main(int argc, char *argv[])
 	while (1)
 	{
 		in = read(src, buf, BUF_SIZE);
-		if (in <=0)
+		if (in <= 0)
 			break;
 		out = write(dst, buf, in);
 		if (out <= 0)
