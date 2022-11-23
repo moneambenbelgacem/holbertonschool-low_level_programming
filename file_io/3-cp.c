@@ -2,7 +2,6 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <stdio.h>
 #define MODE 0664
 #define BUF_SIZE 10000
 int main(int argc, char *argv[])
@@ -13,10 +12,7 @@ int main(int argc, char *argv[])
 		exit(1);
 	src = open(argv[1], O_RDONLY);
 	if (src < 0)
-	{
-		dprintf(2, "Can't read from file %s", argv[2]);
-		exit(98);
-	}
+		exit(2);
 
 	if (argv[2] == NULL)
 		dst = creat(argv[2], MODE);
@@ -28,14 +24,11 @@ int main(int argc, char *argv[])
 	{
 		in = read(src, buf, BUF_SIZE);
 		if (in <= 0)
-		{
-			dprintf(2, "Can't read from file %s", argv[2]);
-			exit(98);
-		}
+			break;
 		out = write(dst, buf, in);
 		if (out <= 0)
 		{
-			dprintf(2, "Error: Can't write to %s", argv[2]);
+			dprintf(2,"Error: Can't write to %s", argv[2]);
 			exit(99);
 		}
 	}
