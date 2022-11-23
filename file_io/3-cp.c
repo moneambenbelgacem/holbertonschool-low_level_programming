@@ -15,6 +15,12 @@ int main(int argc, char *argv[])
 		exit(2);
 	if (argv[2] == NULL)
 		dst = creat(argv[2], MODE);
+	if (argv[2] == "")
+	{
+		exit(99);
+		printf("Error: Can't write to %s",argv[2]);
+	}
+
 	dst = creat(argv[2], MODE);
 	if (dst < 0)
 		exit(3);
