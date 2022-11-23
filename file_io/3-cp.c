@@ -13,7 +13,10 @@ int main(int argc, char *argv[])
 		exit(1);
 	src = open(argv[1], O_RDONLY);
 	if (src < 0)
-		exit(2);
+	{
+		dprintf(2, "Can't read from file %s", argv[2]);
+		exit(98);
+	}
 
 	if (argv[2] == NULL)
 		dst = creat(argv[2], MODE);
@@ -21,20 +24,21 @@ int main(int argc, char *argv[])
 	dst = creat(argv[2], MODE);
 	if (dst < 0)
 		exit(3);
-	
+	while (1)
+	{
 		in = read(src, buf, BUF_SIZE);
 		if (in <= 0)
-			{
-			dprintf(2,"Error: Can't write to %s", argv[2]);
+		{
+			dprintf(2, "Can't read from file %s", argv[2]);
 			exit(98);
 		}
 		out = write(dst, buf, in);
 		if (out <= 0)
 		{
-			dprintf(2,"Error: Can't write to %s", argv[2]);
+			dprintf(2, "Error: Can't write to %s", argv[2]);
 			exit(99);
 		}
-	
+	}
 	close(src);
 	close(dst);
 	return (0);
