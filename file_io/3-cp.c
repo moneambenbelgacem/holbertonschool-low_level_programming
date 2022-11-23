@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		in = read(src, buf, BUF_SIZE);
 		if (in <= 0)
 			{
-			dprintf(2, "Error: Can't read from %s\n", argv[1]);
+			dprintf(2, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 			break;
 		}
