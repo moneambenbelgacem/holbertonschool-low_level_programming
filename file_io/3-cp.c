@@ -5,6 +5,13 @@
 #include <stdio.h>
 #define MODE 0664
 #define BUF_SIZE 5000
+/**
+ * main - check the code .
+ *
+ * @argc: Argumetns counter
+ * @argv: Arguments array
+ * Return: Always 0.
+ */
 int main(int argc, char *argv[])
 {
 	int src, dst, in, out, c1, c2;
