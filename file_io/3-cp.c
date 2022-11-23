@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	src = open(argv[1], O_RDONLY);
 	if (src < 0)
 		exit(2);
-	
+
 	if (argv[2] == NULL)
 		dst = creat(argv[2], MODE);
 
@@ -27,7 +27,10 @@ int main(int argc, char *argv[])
 			break;
 		out = write(dst, buf, in);
 		if (out <= 0)
-			break;
+		{
+			dprintf("Error: Can't write to %s", argv[2]);
+			exit(99);
+		}
 	}
 	close(src);
 	close(dst);
