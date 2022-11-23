@@ -4,7 +4,7 @@
 #include <unistd.h>
 #define MODE 0666
 #define BUF_SIZE 8192
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int src, dst, in, out;
 	char buf[BUF_SIZE];
@@ -27,5 +27,5 @@ void main(int argc, char *argv[])
 	}
 	close(src);
 	close(dst);
-	exit(0);
+	return(0);
 }
