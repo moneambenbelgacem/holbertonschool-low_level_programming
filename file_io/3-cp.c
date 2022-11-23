@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 	char buf[BUF_SIZE];
 	if (argc != 3)
 		exit(1);
-	src = open(argv[1], O_RDONLY);
+	src = open(argv[1], O_RDONLY| O_TRUNC);
 	if (src < 0)
 		exit(2);
 	dst = creat(argv[2], MODE);
