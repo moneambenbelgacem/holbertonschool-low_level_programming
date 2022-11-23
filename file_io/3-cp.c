@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #define MODE 0664
-#define BUF_SIZE 8192
+#define BUF_SIZE 10000
 int main(int argc, char *argv[])
 {
 	int src, dst, in, out;
