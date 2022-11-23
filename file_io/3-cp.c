@@ -2,7 +2,7 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <unistd.h>
-#define MODE 0665
+#define MODE 0664
 #define BUF_SIZE 8192
 int main(int argc, char *argv[])
 {
