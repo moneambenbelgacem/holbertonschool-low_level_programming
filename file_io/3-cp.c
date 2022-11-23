@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	c1 =close(src);
 	if(c1== -1)
 	{
-		printf("Error: Can't close fd FD_VALUE");
+		dprintf(1,"Error: Can't close fd FD_VALUE");
 		exit(100);
 	}
 	close(dst);
