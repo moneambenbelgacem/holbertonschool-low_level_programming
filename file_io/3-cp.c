@@ -27,5 +27,5 @@ int main(int argc, char *argv[])
 	}
 	close(src);
 	close(dst);
-	return(1);
+	return(0);
 }
