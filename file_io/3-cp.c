@@ -4,10 +4,10 @@
 #include <unistd.h>
 #include <stdio.h>
 #define MODE 0664
-#define BUF_SIZE 10000
+#define BUF_SIZE 5000
 int main(int argc, char *argv[])
 {
-	int src, dst, in, out,c1;
+	int src, dst, in, out,c1,c2,r1;
 	char buf[BUF_SIZE];
 	if (argc != 3)
 		exit(1);
@@ -25,7 +25,10 @@ int main(int argc, char *argv[])
 	{
 		in = read(src, buf, BUF_SIZE);
 		if (in <= 0)
-			break;
+			{
+		dprintf(2, "Can't read from %s\n", src);
+		exit(98);
+	}
 		out = write(dst, buf, in);
 		if (out <= 0)
 		{
@@ -39,6 +42,11 @@ int main(int argc, char *argv[])
 		dprintf(2, "Error: Can't close fd %d\n", c1);
 		exit(100);
 	}
-	close(dst);
+	c2 = close(dst);
+	if(c2== -1)
+	{
+		dprintf(2, "Error: Can't close fd %d\n", c2);
+		exit(100);
+	}
 	return (0);
 }
