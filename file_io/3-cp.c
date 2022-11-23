@@ -13,7 +13,9 @@ int main(int argc, char *argv[])
 	src = open(argv[1], O_RDONLY);
 	if (src < 0)
 		exit(2);
-	dst = open(argv[2], O_CREAT  | O_TRUNC,0664);
+	if (argv[2] == NULL)
+		dst = creat(argv[2], MODE);
+	dst = creat(argv[2], MODE);
 	if (dst < 0)
 		exit(3);
 	while (1)
@@ -27,5 +29,5 @@ int main(int argc, char *argv[])
 	}
 	close(src);
 	close(dst);
-	return(0);
+	return (0);
 }
