@@ -18,7 +18,10 @@ int main(int argc, char *argv[])
 	char buf[BUF_SIZE];
 
 	if (argc != 3)
-		exit(1);
+		{
+			dprintf(2, "Usage: cp file_from file_to\n");
+		exit(97);
+		}
 	src = open(argv[1], O_RDONLY);
 	if (src < 0)
 		exit(2);
