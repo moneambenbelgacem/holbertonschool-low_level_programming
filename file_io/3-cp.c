@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		in = read(src, buf, BUF_SIZE);
 		if (in <= 0)
 			{
-		dprintf(2, "Can't read from %s\n", src);
+		dprintf(2, "Can't read from %d\n", in);
 		exit(98);
 	}
 		out = write(dst, buf, in);
