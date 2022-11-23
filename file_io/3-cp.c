@@ -2,6 +2,7 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdio.h>
 #define MODE 0664
 #define BUF_SIZE 10000
 int main(int argc, char *argv[])
