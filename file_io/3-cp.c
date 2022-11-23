@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		out = write(dst, buf, in);
 		if (out <= 0)
 		{
-			
+			dprintf(2, "Error: Can't close fd %s\n", argv[2]);
 			exit(99);
 		}
 	}
