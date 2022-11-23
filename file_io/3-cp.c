@@ -21,8 +21,7 @@ int main(int argc, char *argv[])
 	dst = creat(argv[2], MODE);
 	if (dst < 0)
 		exit(3);
-	while (1)
-	{
+	
 		in = read(src, buf, BUF_SIZE);
 		if (in <= 0)
 		{
@@ -35,7 +34,7 @@ int main(int argc, char *argv[])
 			dprintf(2, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
-	}
+	
 	c1 =close(src);
 	if(c1== -1)
 	{
