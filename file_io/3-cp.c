@@ -24,11 +24,8 @@ int main(int argc, char *argv[])
 	while (1)
 	{
 		in = read(src, buf, BUF_SIZE);
-		if (in == -1)
-			{
-		
-		exit(98);
-	}
+		if (in <= 0)
+			break;
 		out = write(dst, buf, in);
 		if (out <= 0)
 		{
