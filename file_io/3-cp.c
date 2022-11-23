@@ -24,9 +24,9 @@ int main(int argc, char *argv[])
 	while (1)
 	{
 		in = read(src, buf, BUF_SIZE);
-		if (in <= 0)
+		if (in == -1)
 			{
-		dprintf(2, "Can't read from %s\n", buf);
+		
 		exit(98);
 	}
 		out = write(dst, buf, in);
