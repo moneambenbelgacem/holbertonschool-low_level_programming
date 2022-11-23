@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * create_file - check the code
+ * append_text_to_file - check the code
  *@filename: nom du fichier
  *@text_content: the content
  * Return: Always 0.
  */
-int append_text_to_file(const char *filename, char *text_content){
+int append_text_to_file(const char *filename, char *text_content)
+{
 	int fp;
 
-	fp = open(filename,O_WRONLY |O_APPEND);
+	fp = open(filename, O_WRONLY | O_APPEND);
 	if (fp == -1)
 	{
 		return (-1);
@@ -26,3 +27,4 @@ int append_text_to_file(const char *filename, char *text_content){
 	close(fp);
 	return (1);
 }
+
