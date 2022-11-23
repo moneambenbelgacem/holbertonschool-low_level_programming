@@ -1,13 +1,6 @@
-#include <sys/types.h>
-#include <fcntl.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdio.h>
-#define MODE 0664
-#define BUF_SIZE 5000
+#include "main.h"
 /**
  * main - check the code .
- *
  * @argc: Argumetns counter
  * @argv: Arguments array
  * Return: Always 0.
@@ -19,16 +12,12 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 		{
-			dprintf(2, "Usage: cp file_from file_to\n");
+		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 		}
 	src = open(argv[1], O_RDONLY);
-	if (src < 0)
-		exit(2);
-
 	if (argv[2] == NULL)
 		dst = creat(argv[2], MODE);
-
 	dst = creat(argv[2], MODE);
 	if (dst < 0)
 		exit(3);

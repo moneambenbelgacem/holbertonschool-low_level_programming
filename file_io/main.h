@@ -1,5 +1,7 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
+#define MODE 0664
+#define BUF_SIZE 5000
 #include <stddef.h>
 #include <stdio.h>
 #include <string.h>
