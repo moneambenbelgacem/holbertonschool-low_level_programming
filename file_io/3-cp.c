@@ -6,7 +6,7 @@
 #define BUF_SIZE 10000
 int main(int argc, char *argv[])
 {
-	int src, dst, in, out;
+	int src, dst, in, out,c1,c2;
 	char buf[BUF_SIZE];
 	if (argc != 3)
 		exit(1);
@@ -32,7 +32,12 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	close(src);
+	c1 =close(src);
+	if(c1== -1)
+	{
+		printf("Error: Can't close fd FD_VALUE");
+		exit(100);
+	}
 	close(dst);
 	return (0);
 }
