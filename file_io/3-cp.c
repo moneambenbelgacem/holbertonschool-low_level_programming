@@ -7,7 +7,7 @@
 #define BUF_SIZE 10000
 int main(int argc, char *argv[])
 {
-	int src, dst, in, out,c1,c2;
+	int src, dst, in, out,c1;
 	char buf[BUF_SIZE];
 	if (argc != 3)
 		exit(1);
