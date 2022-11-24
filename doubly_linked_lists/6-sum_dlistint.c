@@ -2,7 +2,6 @@
 /**
  * sum_dlistint - check the code
  *@head: input list
- *@index: input list
  * Return: Always EXIT_SUCCESS.
  */
 int sum_dlistint(dlistint_t *head)
