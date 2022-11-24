@@ -12,6 +12,9 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	int state = 0;
 
 	hsol = head;
+
+	if(index == 0)
+	return(hsol);
 	while (hsol)
 	{
 		if (i == index)
