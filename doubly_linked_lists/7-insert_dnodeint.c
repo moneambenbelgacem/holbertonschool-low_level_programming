@@ -16,13 +16,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	emchi = (*(h))->next;
 	emchi_wrah = *h;
 
-	if (idx == 0)
+	if (idx == 0) 
 	{
-		new->prev = NULL;
-		new->next = emchi_wrah;
-		*h = new;
-		new->n = n;
-		return (new);
+		add_dnodeint(h,n);
 	}
 	else
 	{
@@ -44,10 +40,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 				i++;
 			}
 		}
-		new->next = NULL; 
-		new->prev = emchi;
-		emchi->next = new;
-		new->n = n;
+		return(add_dnodeint_end(h,n));
 	}
 	return (new);
 }
