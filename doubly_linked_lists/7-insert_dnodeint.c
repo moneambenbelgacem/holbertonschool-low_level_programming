@@ -46,6 +46,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		}
 		new->next = NULL;
 		new->next = emchi;
+		emchi->next = new;
 		new->n = n;
 	}
 	return (new);
