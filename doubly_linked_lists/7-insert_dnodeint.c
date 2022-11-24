@@ -1,48 +1,50 @@
 #include "lists.h"
 /**
- * add_dnodeint - check the code
- *@head: input list
- *@n: input int
- * Return: Always EXIT_SUCCESS.
+ * insert_dnodeint_at_index - inserts a new node at a given position.
+ * @h: dlistint_t
+ * @idx: unsigned int
+ * @n: int
+ * Return: new
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *emchi, *emchi_wrah, *new;
+	dlistint_t *new;
 	unsigned int i = 0;
 
+	if (i < idx && *h == NULL)
+		return (NULL);
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
-		return (NULL);
-	emchi = (*(h))->next;
-	emchi_wrah = *h;
-
+		return (0);
 	if (idx == 0)
 	{
 		return (add_dnodeint(h, n));
 	}
 	else
 	{
-		while (idx)
+		dlistint_t *pos = *h;
+
+		while (i < idx - 1)
 		{
-			
-			if (i == idx - 1)
+			if (pos == NULL)
 			{
-				new->n = n;
-				new->prev = emchi_wrah;
-				new->next = emchi;
-				emchi_wrah->next = new;
-				emchi->prev = new;
-				return (*h);
+				return (NULL);
 			}
-			else
-			{
-				emchi = emchi->next;
-				emchi_wrah = emchi_wrah->next;
-				i++;
-				idx--;
-			}
+			pos = pos->next;
+			i++;
 		}
-		return (add_dnodeint_end(h, n));
+		if (pos->next == NULL)
+		{
+			return (add_dnodeint_end(h, n));
+		}
+		else
+		{
+			new->n = n;
+			new->prev = pos;
+			new->next = pos->next;
+			pos->next->prev = new;
+			pos->next = new;
+		}
 	}
 	return (new);
 }
