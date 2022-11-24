@@ -22,10 +22,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 	else
 	{
-		while (emchi->next != NULL)
+		while (idx)
 		{
-			if (!emchi)
-				return (NULL);
+			
 			if (i == idx - 1)
 			{
 				new->n = n;
@@ -40,6 +39,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 				emchi = emchi->next;
 				emchi_wrah = emchi_wrah->next;
 				i++;
+				idx--;
 			}
 		}
 		return (add_dnodeint_end(h, n));
