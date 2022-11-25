@@ -33,7 +33,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	else
 	{
-		while (emchi != NULL)
+		while (emchi->next != NULL)
 		{
 			if (i == index - 1)
 			{
@@ -45,9 +45,8 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			}
 			else
 			{
-				if (!emchi)
-					return (-1);
 				emchi = emchi->next;
+				
 				emchi_wrah = emchi_wrah->next;
 				i++;
 			}
