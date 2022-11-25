@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * main - check the code .
- * @argc: Argumetns counter
- * @argv: Arguments array
+ * delete_dnodeint_at_index - check the code .
+ * @head: Argumetns counter
+ * @index: Arguments array
  * Return: Always 0.
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
@@ -18,7 +18,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		if ((*head)->next != NULL)
 		{
-
 			(*head) = (*head)->next;
 			(*head)->prev = NULL;
 			free(emchi_wrah);
@@ -57,3 +56,4 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (1);
 	}
 }
+
