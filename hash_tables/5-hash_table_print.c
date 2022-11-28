@@ -7,12 +7,12 @@
  */
 void print_element(hash_node_t *hn, unsigned int j)
 {
-	if(j != 0)
-	printf(", ");
-	printf("'%s' : ",hn->key);
-	printf("'%s' ",hn->value);
-	if(hn->next)
-	print_element(hn->next,j++);
+	if (j != 0)
+		printf(", ");
+	printf("'%s':", hn->key);
+	printf(" '%s'", hn->value);
+	if (hn->next)
+		print_element(hn->next, j++);
 }
 /**
  * hash_table_print - delete element by index
