@@ -22,6 +22,7 @@ void print_element(hash_node_t *hn, unsigned int j)
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned int i, j = 0;
+
 	if (ht != NULL)
 	{
 
