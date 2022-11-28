@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- * delete_dnodeint_at_index - delete element by index
+ * hash_table_create - delete element by index
  * @size: address node list
  * Return: integer
  */
@@ -11,10 +11,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 	ht = malloc(sizeof(hash_table_t));
 	if (ht == NULL)
 		return (NULL);
-ht->size=size;
-	ht->array = calloc(size, sizeof(hash_node_t*));
+	ht->size = size;
+	ht->array = calloc(size, sizeof(hash_node_t *));
 	if (ht->array == NULL)
 		return (NULL);
 
-	return(ht);
+	return (ht);
 }
