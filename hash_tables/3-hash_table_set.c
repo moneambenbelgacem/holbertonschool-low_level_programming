@@ -30,7 +30,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (ht->array[add]->key == key)
 		{
 			free(ht->array[add]->value);
-			ht->array[add]->value = value;
+			ht->array[add]->value = strdup(value);
 
 		}
 		else
