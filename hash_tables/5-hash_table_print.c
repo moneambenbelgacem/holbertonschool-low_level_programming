@@ -22,12 +22,16 @@ void print_element(hash_node_t *hn, unsigned int j)
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned int i, j = 0;
-	putchar('{');
-	for (i = 0; i < ht->size; i++)
+	if (ht != NULL)
 	{
-		if (ht->array[i])
-			print_element(ht->array[i], j++);
+
+		putchar('{');
+		for (i = 0; i < ht->size; i++)
+		{
+			if (ht->array[i])
+				print_element(ht->array[i], j++);
+		}
+		putchar('}');
+		putchar('\n');
 	}
-	putchar('}');
-	putchar('\n');
 }
