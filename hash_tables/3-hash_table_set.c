@@ -1,7 +1,9 @@
 #include "hash_tables.h"
 /**
- * hash_table_create - delete element by index
- * @size: address node list
+ * hash_table_set - delete element by index
+ * @ht: address node list
+ * @key: key entry
+ * @value: value entry
  * Return: integer
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -27,19 +29,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	else
 	{
-		if (strcmp(ht->array[add]->key,key) == 0 )
+		if (strcmp(ht->array[add]->key, key) == 0)
 		{
 			free(ht->array[add]->value);
 			ht->array[add]->value = strdup(value);
-
 		}
 		else
 		{
-			
+
 			new->next = ht->array[add];
 			ht->array[add] = new;
-			
-
 		}
 	}
 	return (1);
