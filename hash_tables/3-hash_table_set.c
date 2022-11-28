@@ -9,8 +9,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int add;
 	hash_node_t *new = NULL;
 
-	if(ht == NULL || key == NULL)
-	return (0);
+	if (ht == NULL || key == NULL)
+		return (0);
 
 	new = malloc(sizeof(hash_node_t));
 	if (new == NULL)
@@ -24,7 +24,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht->array[add] == 0)
 	{
 		ht->array[add] = new;
-		return (1);
 	}
-	return (0);
+		return (1);
+	
 }
