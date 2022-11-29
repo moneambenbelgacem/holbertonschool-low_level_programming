@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 /**
  * hash_table_delete - delete element by index
- * @ht: address node list
+ * @ht: address node  list
  * Return: integer
  */
 void hash_table_delete(hash_table_t *ht)
