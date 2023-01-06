@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- * print_array_two_condition - print element of array from start to final
+ * print_array- print element of array from start to final
  * @array: list of integer
  * @star: from start
  * @stop: from stop
@@ -19,7 +19,7 @@ void print_array(int *array, int star, int stop)
 	putchar('\n');
 }
 /**
- * linear_search - function that print negative or positif check
+ * binary_search - function that print negative or positif check
  *@array: length of array
  *@size: input char
  *@value: input char
